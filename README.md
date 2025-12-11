@@ -8,7 +8,6 @@
 
 Pasyo Meal Planner is a specialized web application designed to help individuals with diabetes and high blood pressure manage their nutrition through culturally-relevant, Filipino-inspired low-carb meal plans. The application generates diverse, nutritionally-balanced meal options while maintaining cultural authenticity.
 
-![Pasyo Meal Planner Screenshot](https://via.placeholder.com/800x450.png?text=Pasyo+Meal+Planner)
 
 ## ✨ Features
 
