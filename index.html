@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasyo Meal Planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="theme-toggle">
+        <i class="fas fa-sun"></i>
+        <label class="switch">
+            <input type="checkbox" id="theme-switch">
+            <span class="slider round"></span>
+        </label>
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <i class="fas fa-leaf logo-icon"></i>
+                <h1>Pasyo Meal Planner</h1>
+            </div>
+            <p class="tagline">Low-carb Filipino-inspired meals for healthier living</p>
+        </header>
+
+        <div class="info-banner">
+            <div class="info-icon"><i class="fas fa-info-circle"></i></div>
+            <div class="info-content">
+                <p>Designed for individuals with diabetes and high blood pressure</p>
+            </div>
+        </div>
+
+        <div class="filter-section">
+            <h2>Customize Your Meal Plan</h2>
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label>Protein Preference</label>
+                    <div class="filter-options">
+                        <button class="filter-btn active" data-protein="all"><i class="fas fa-utensils"></i> All</button>
+                        <button class="filter-btn" data-protein="fish"><i class="fas fa-fish"></i> Fish</button>
+                        <button class="filter-btn" data-protein="chicken"><i class="fas fa-drumstick-bite"></i> Chicken</button>
+                        <button class="filter-btn" data-protein="pork"><i class="fas fa-bacon"></i> Pork</button>
+                        <button class="filter-btn" data-protein="vegetarian"><i class="fas fa-seedling"></i> Vegetarian</button>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <label>Carb Level</label>
+                    <div class="filter-options">
+                        <button class="filter-btn active" data-carb="all"><i class="fas fa-chart-pie"></i> All</button>
+                        <button class="filter-btn" data-carb="very-low"><i class="fas fa-angle-down"></i> Very Low (0-5g)</button>
+                        <button class="filter-btn" data-carb="low"><i class="fas fa-angle-right"></i> Low (6-10g)</button>
+                        <button class="filter-btn" data-carb="moderate"><i class="fas fa-angle-up"></i> Moderate (11-15g)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button id="generate-btn" class="primary-btn"><i class="fas fa-sync-alt"></i> Generate Meal Plan</button>
+            <button id="print-btn" class="secondary-btn"><i class="fas fa-print"></i> Print</button>
+            <button id="export-btn" class="secondary-btn"><i class="fas fa-file-export"></i> Export PDF</button>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-bread-slice"></i></div>
+                <div class="stat-info">
+                    <h3>Avg. Daily Carbs</h3>
+                    <p id="avg-carbs">0g</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-drumstick-bite"></i></div>
+                <div class="stat-info">
+                    <h3>Avg. Daily Protein</h3>
+                    <p id="avg-protein">0g</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-seedling"></i></div>
+                <div class="stat-info">
+                    <h3>Avg. Daily Fiber</h3>
+                    <p id="avg-fiber">0g</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="meal-plan-container">
+            <div id="meal-plan"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Pasyo Meal Planner | <span class="heart">♥</span> Designed for healthier Filipino living</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
